@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zad3</title>
+	</head>
+	<body>
+		
+		<input type="text" id="input"/>
+		<button type="button" id="submit">Click</button>
+			
+		<p id="paragraphIdd">Some text</p>	
+		
+	</body>
+	
+	<script>
+			
+			var button = document.getElementById('submit');
+			
+			button.addEventListener('click', inputValue, false);
+			
+			function inputValue(){
+				var id = document.getElementById('input').value;
+				
+				var element = document.getElementById(id);
+				if(element != null){
+					alert(element.innerHTML);	
+				} 
+				else {
+					alert('No element with such ID');
+				}
+				
+			}
+				
+	</script>
+	
+
+</html>

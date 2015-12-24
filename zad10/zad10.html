@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zad10</title>
+		
+		<style>
+		
+			.visible-span {
+				display: inline;
+				color: blue;
+			}
+		
+			.visible-input {
+				border: 2px solid black;
+			}
+			.hidden {
+				display: none;
+			}
+			
+			input {
+			margin: 7px 0px;
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		<h1>Add Employee</h1>
+	
+		<form action="" method="get">
+			<div class="alignment">
+					<label for="firstname">First name:</label>
+					<input type="text" id="firstname" name="firstname" class="visible-input">
+					<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+			
+			<br/>	
+			
+			<div class="alignment">
+					<label for="lastname">Last name:</label>
+					<input type="text" id="lastname" name="lastname" class="visible-input">
+					<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+			
+			<br/>
+			
+			<div class="alignment2">
+					<label for="title">Title:</label>	
+					<input type="text" id="title" name="title" class="visible-input">
+					<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+			
+				<br/>
+			
+			<div class="alignment9">
+					<label for="cortesy">Title of Courtesy:</label>
+					<input type="radio" id="cortesy_dr" checked="checked" name="cortesy" value="dr"><label for="cortesy_dr">Dr</label>
+					<input type="radio" id="cortesy_mr" name="cortesy" value="mr"><label for="cortesy_mr">Mr</label>
+					<input type="radio" id="cortesy_mrs" name="cortesy" value="mrs"><label for="cortesy_mrs">Mrs</label>
+					<input type="radio" id="cortesy_ms" name="cortesy" value="ms"><label for="cortesy_ms">Ms</label>
+			
+			</div>
+			
+			<br/>
+			
+			<div class="alignment3">
+				<label for="birth">Birth date:</label>
+				<select name="bmonth">
+					<option value="Janary">Janary</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May" selected="selected">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="Septeber">Septeber</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				
+				<select name="bday">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option selected="selected">5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option selected="selected">27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+			
+				
+				<select name="byear">
+					<option selected="selected">1980</option>
+					<option>1981</option>
+					<option>1982</option>
+					<option>1983</option>
+					<option>1984</option>
+					<option>1985</option>
+					<option>1986</option>
+					<option>1987</option>
+					<option>1988</option>
+					<option>1989</option>
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+				</select>
+			</div>
+			
+			<br/>
+			
+			<div class="alignment3">
+				<label for="birth">Birth date:</label>
+				<select name="wmonth">
+					<option value="Janary" selected="selected">Janary</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="Septeber">Septeber</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				
+				<select name="way">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option selected="selected">10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+			
+				
+				<select name="wyear">
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option selected="selected">2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+				</select>
+			</div>
+			
+			<br/>
+			
+			<div class="alignment2">
+					<label for="city">City:</label>
+					<input type="text" id="city" name="city" value="Winterset">
+			</div>
+			
+			<br/>
+			
+			<div class="alignment4">
+					<label for="region">Region:</label>
+					<input type="text" id="region" name="region" value="IA">
+			</div>
+			
+			<br/>
+			
+			<div class="alignment5">
+					<label for="country">Country:</label>
+					<select name="country" id="country">
+						<option value="usa">USA</option>
+						<option value="uk">UK</option>
+						<option value="other">Other</option>
+					</select>
+					<input type="text" id="input-country" class="hidden">
+					<span class="hidden">The field is empty. Please fill it!</span>
+			</div>
+			
+			<br/>
+
+			<div class="alignment6">
+					<label for="phone">Home Phone:</label>
+					<input type="text" id="phone" name="phone" value="515-555-1212">
+			</div>
+			
+			<br/>
+			
+			<div class="alignment">
+					<label for="extension">Extension:</label>
+					<input type="text" id="extension" name="extension" value="1212">
+			</div>
+			
+			<br/>
+			
+			<div>
+					<label for="notes">Notes:</label>
+					<br/>
+					<textarea rows="5" cols="50" id="notes" name="notes" class="visible-input"></textarea>
+					<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+			
+			<br/>
+			
+			<div class="alignment3">
+				<label for="manager">Manager:</label>
+				<select name="manager">
+					<option value="AF">Andrew Fuller</option>
+					<option value="AM" selected="selected">Alexey Miller</option>
+					<option value="AS">Adam Sandler</option>
+				</select>
+			</div>
+			
+			<br/>
+		
+			<div class="alignment7">
+				<label for="password">Password:</label>
+				<input type="password" id="password" class="visible-input">
+				<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+			
+			<br/>
+			
+			<div class="alignment8">
+				<label for="rpassword">Repeat Password:</label>
+				<input type="password" id="rpassword" class="visible-input">
+				<span class="visible-span">The field is empty. Please fill it!</span>
+			</div>
+	
+			<br/>
+		
+			<div>
+				<button type="submit">Add Employee</button>
+			</div>
+			
+		</form>
+		
+		<script type="text/javascript">
+			var inputs = document.getElementsByTagName('input');
+			
+			var textarea = document.getElementsByTagName('textarea');
+			
+			for(var i = 0; i < inputs.length; i++){
+				inputs[i].addEventListener('keyup', validateInput);
+			}
+			
+			
+			for(var i = 0; i < textarea.length; i++){
+				textarea[i].addEventListener('keyup', validateInput);
+			}
+			
+			
+			var select = document.getElementById('country');
+			
+			select.addEventListener('change', function(){
+				var selected = select.options[select.selectedIndex].value,
+				input = document.getElementById('input-country');
+			
+				if(selected == 'other'){
+					input.className = 'visible-input';
+					input.nextElementSibling.className = 'visible-span';
+					input.addEventListener('keyup', validateInput);
+				} else {
+					input.value = '';
+					input.className = 'hidden';
+					input.nextElementSibling.className = 'hidden';
+				  }
+			})
+			
+			function validateInput(){
+				if(this.value == ' '){
+					this.className = 'visible-input';
+					this.nextElementSibling.className = 'visible-span';
+				} else {
+					this.className = '';
+					this.nextElementSibling.className = 'hidden';
+				}
+			}
+	</script>
+		
+	</body>
+</html>

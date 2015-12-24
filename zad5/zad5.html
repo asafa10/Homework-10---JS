@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zad5</title>
+	</head>
+	<body>
+	
+		<div>
+			<label for="radius">Radius <br/></label>
+			<input type="text" id="radius">
+		</div>
+		
+		<br/>
+		
+		<div>
+			<label for="volume">Volume <br/></label>
+			<input type="text" value="0.0000" id="volume">
+		</div>
+		
+		<br/>
+		
+		<button id="calculate">Calculate</button>
+		
+
+	</body>
+	
+	<script type="text/javascript">
+			
+			var button = document.getElementById('calculate');
+			
+			button.addEventListener('click', function(){
+				var radius = document.getElementById('radius').value;
+				var volume = document.getElementById('volume');
+				
+				volume.value = doCalc(radius);
+				
+				function doCalc(radius){
+					var volumeVal = Math.round(4 / 3 * Math.PI * Math.pow(radius, 3));
+					return volumeVal;
+				}
+				
+			})
+	
+	</script>
+	
+</html>

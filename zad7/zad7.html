@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zad7</title>
+		<style type="text/css">
+			
+			div {
+				border: 1px solid black;
+				display: inline-block;
+				padding: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+		<div id="div">
+		
+			<label for="input"></label>
+			<input type="text" id="input"/>
+			
+			<select name="choice1" id="select1">
+				<option value="kglb">Kg to Lb</option>
+				<option value="lbkg">Lb to Kg</option>
+			</select>
+			
+			<select name="choice2" id="select2">
+				<option value="kglb">Kg to Lb</option>
+				<option value="lbkg">Lb to Kg</option>
+			</select>
+			
+			<button id="submit">Convert</button>
+			
+		</div>
+		
+	</body>
+	
+	<script type="text/javascript">
+	
+		var button = document.getElementById('submit');
+		var theConverted = document.createElement('p');
+		document.getElementById('div').appendChild(theConverted);
+		
+		button.addEventListener('click', function(){
+			var input = document.getElementById('input').value;
+			var select1 = document.getElementById('select1');
+			var option1 = select1.options[select1.selectedIndex].value;
+			var select2 = document.getElementById('select2');
+			var option2 = select2.options[select2.selectedIndex].value;
+			
+			if(option1 === 'kglb'){	
+				if(option2 === 'kglb')
+					theConverted.innerHTML = (input * 1);
+				else
+					theConverted.innerHTML = (input * 2.20462262);
+			}
+			
+			if(option1 === 'lbkg'){
+				if(option2 === 'lbkg')
+					theConverted.innerHTML = (input * 1);
+				else
+					theConverted.innerHTML = (input / 2.20462262);
+			}
+				
+				
+		})
+		
+	</script>
+	
+</html>

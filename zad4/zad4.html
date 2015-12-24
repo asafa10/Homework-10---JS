@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Zad4</title>
+	</head>
+	<body>
+		
+		<div>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</div>
+
+	</body>
+	
+	<script type="text/javascript">
+			var totalId = document.getElementsByTagName('a').length;
+			for (var i = 0; i <= totalId; i++){
+				if (i == 1){
+					alert("More tnah one anchor. There will be pop up and break!");
+					break;
+				}
+				else if (totalId == 0)
+					alert("There are no <a> tags");
+			}
+	</script>	
+</html>

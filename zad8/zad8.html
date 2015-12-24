@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zad8</title>
+		<style type="text/css">
+			td {
+				border: 1px solid blue;
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<label for="cols">Enter number of cols per row</label>
+		<input type="text" id="cols">
+		<button id="row">Add Column</button>
+		
+		<script>
+		
+			var table = document.getElementById('table'),
+				button = document.getElementById('row');
+				button.addEventListener('click', addRow);
+				
+				function addRow(){
+					var cols = document.getElementById('cols').value || 3,
+					i;
+					if(table == null){
+						table = document.createElement('table');
+						table.id = 'table';
+						document.body.appendChild(table);
+					}
+					var newRow = document.createElement('tr');
+					for(i = 0; i < cols; i += 1){
+						var currentCol = document.createElement('td');
+						newRow.appendChild(currentCol);
+					}
+					table.appendChild(newRow);
+					document.getElementById('cols').value = ''; 
+			}
+	</script>
+	
+	</body>
+</html>
